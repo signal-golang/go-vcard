@@ -2,7 +2,7 @@ image: alpine/edge
 packages:
   - go
 sources:
-  - https://github.com/emersion/go-vcard
+  - https://github.com/signal-golang/go-vcard
 artifacts:
   - coverage.html
 tasks:

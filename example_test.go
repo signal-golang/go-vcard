@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/emersion/go-vcard"
+	"github.com/signal-golang/go-vcard"
 )
 
 func ExampleNewDecoder() {
