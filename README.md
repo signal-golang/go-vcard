@@ -5,6 +5,8 @@
 
 A Go library to parse and format [vCard](https://tools.ietf.org/html/rfc6350).
 
+This forks adds the possibility to parse vcards Version 2.1. which is not supported by the original library.
+
 ## Usage
 
 ```go
