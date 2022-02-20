@@ -110,7 +110,15 @@ func parseLine(l string) (key string, field *Field, err error) {
 	}
 
 	if hasParams {
-		field.Params, l, err = parseParams(l)
+		// field.Params, l, err = parseParams(l)
+		i := strings.IndexAny(l, "=")
+		if i >= 0 {
+			field.Params, l, err = parseParams(l)
+		} else {
+			// Surely v2.1 parameter syntax
+			i = strings.IndexAny(l, ":")
+			l = l[i+1:]
+		}
 		if err != nil {
 			return
 		}
