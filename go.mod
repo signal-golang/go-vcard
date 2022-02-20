@@ -1,3 +1,3 @@
-module github.com/emersion/go-vcard
+module github.com/signal-golang/go-vcard
 
 go 1.13
